@@ -1,0 +1,180 @@
+/*
+    @author Jordan N
+    @date 2/21/2025
+    CS 125H - Lab 6
+*/
+
+/* Title & Navigation Bar */
+
+.title {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    color:#faf9f6;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 150%; 
+   
+    background: linear-gradient(193deg, rgba(142,252,255,1) 0%, rgba(128,226,244,1) 8%,
+    rgba(82,142,209,1) 66%, rgba(82,142,209,1) 92%);
+    
+    padding:10px 20px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.35);
+
+    position: fixed; /* position property */
+    width:100%;
+}
+
+/* Elements */
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #faf9f6;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight:bold;
+}
+
+h2 {
+    color:#faf9f6;;
+    font-size: 200%;
+    background: #528ed1;
+    background: linear-gradient(193deg, rgba(142,252,255,1) 0%, rgba(128,226,244,1) 8%,
+     rgba(82,142,209,1) 66%, rgba(82,142,209,1) 92%);
+    clear:both; /* clear */
+}
+
+.unique {
+    font-weight:bold;
+    font-size:45px;
+    color:black;
+}
+
+section, article, #title, p {
+    line-height: 200%;
+}
+
+/* Main */
+main {
+    margin:5px;
+    padding: 25px 250px;
+}
+
+main h2 {
+    margin:1em;
+    padding: 25px 100px;
+}
+
+main p{
+    font-size: 125%;
+    padding: 10px 100px;
+    margin:5px;
+}
+
+/* Links */
+nav a {
+    color:#faf9f6;
+}
+
+nav a:link {
+    color:#faf9f6;
+}
+
+nav a:hover {
+    background-color: rgba(211, 211, 211, 0.35);
+}
+
+nav ul {
+    list-style-type:none;
+    display:flex;
+    margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+    padding:0 25px;
+    float:left;
+}
+
+nav ul li a { 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.sub_menu ul {
+	display:none;
+	position:absolute;
+	flex-direction: column;
+    background-color:#faf9f6;
+
+}
+
+.sub_menu ul a{
+	color: #528ed1;
+    font-weight: 100;
+}
+
+.sub_menu:hover ul {
+	display:flex;
+}
+
+/* Image */
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainimg {
+    padding: 150px 25px 25px 25px;
+    border-radius:25px;
+    height:auto;
+    max-width: 100%;
+}
+
+.img {
+    height: auto;
+    width: 50%;
+    margin:2em;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Section */
+
+section img {
+    float:right; /* float */
+}
+
+/* Footer */
+
+footer { 
+    padding: 50px 0;
+    text-align: center;
+    clear:both; /* clear */
+}
+
+
+
